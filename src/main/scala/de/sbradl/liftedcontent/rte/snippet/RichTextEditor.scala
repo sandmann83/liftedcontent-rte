@@ -3,6 +3,9 @@ package de.sbradl.liftedcontent.rte.snippet
 import net.liftweb.http.js.JsCmds
 import net.liftweb.http.js.JE.JsRaw
 import net.liftweb.http.SHtml
+import net.liftweb.http.S
+import eu.sbradl.repository.ContentRepository
+import net.liftweb.util.Helpers._
 
 class RichTextEditor {
 
@@ -20,22 +23,15 @@ class RichTextEditor {
     </tail>
   }
 
-  def render = {
-    <head>
-      <link rel="stylesheet" type="text/css" href="/css/aloha.css"/>
-    </head>
-    <tail>
-      <script src="/lib/aloha.js" data-aloha-plugins="common/abbr,common/align,common/block,common/horizontalruler,common/format,common/table,common/link,common/list,common/undo"></script>
-      <script type="text/javascript">
-        Aloha.ready( function() {{
-         
-        // Make #content editable once Aloha is loaded and ready.
-        Aloha.jQuery('.editable').aloha();
-         
-    }});
-      </script>
-    </tail>
-
-  }
+  def render = <div id="editor_controls"></div>
+               <tail>
+                 <script language="javascript">
+                   var CONTEXT_ROOT = "{ S.contextPath }";
+                 </script>
+                 <script src="/js/RichTextEditor.js"></script>
+                 <script language="javascript">
+                   enableDesignMode();
+                 </script>
+               </tail>
 
 }

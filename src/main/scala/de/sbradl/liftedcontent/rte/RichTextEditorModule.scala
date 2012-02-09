@@ -1,9 +1,9 @@
 package de.sbradl.liftedcontent.rte
 
-import de.sbradl.liftedcontent.util.Module
 import net.liftweb.sitemap.LocPath.stringToLocPath
 import net.liftweb.sitemap.Loc.Hidden
 import net.liftweb.sitemap.Menu
+import de.sbradl.liftedcontent.util.Module
 
 class RichTextEditorModule extends Module {
 
