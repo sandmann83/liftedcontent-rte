@@ -23,14 +23,24 @@ class RichTextEditor {
     </tail>
   }
 
-  def render = <div id="editor_controls"></div>
+  def render = <head>
+                 <link rel="stylesheet" type="text/css" href="/css/sh_style.css"/>
+                 <link rel="stylesheet" type="text/css" href="/css/sh_ide-eclipse.min.css"/>
+               </head>
+               <div id="editor_controls"></div>
                <tail>
                  <script language="javascript">
                    var CONTEXT_ROOT = "{ S.contextPath }";
                  </script>
                  <script src="/js/RichTextEditor.js"></script>
+                 <script src="/js/sh_main.min.js"></script>
+                 <script src="/js/sh_xml.min.js"></script>
+                 <script src="/js/sh_java.min.js"></script>
                  <script language="javascript">
-                   enableDesignMode();
+                   jQuery(document).ready(function() {{
+  					  enableDesignMode();
+  					  sh_highlightDocument();
+  					}});
                  </script>
                </tail>
 
