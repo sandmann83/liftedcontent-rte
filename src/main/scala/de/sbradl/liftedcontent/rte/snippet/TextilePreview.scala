@@ -7,7 +7,7 @@ import net.liftweb.textile.TextileParser
 object TextilePreview {
 
   def render = {
-    "* *" #> TextileParser.toHtml(S.param("data").openOr(""))
+    "* *" #> TextileParser.toHtml(S.param("data").openOr("no data given"))
   }
 
 }
