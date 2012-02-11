@@ -1,11 +1,6 @@
 package de.sbradl.liftedcontent.rte.snippet
 
-import net.liftweb.http.js.JsCmds
-import net.liftweb.http.js.JE.JsRaw
-import net.liftweb.http.SHtml
 import net.liftweb.http.S
-import eu.sbradl.repository.ContentRepository
-import net.liftweb.util.Helpers._
 
 class RichTextEditor {
 
