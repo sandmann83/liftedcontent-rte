@@ -25,9 +25,9 @@ class RichTextEditor {
                </head>
                <div id="editor_controls"></div>
                <tail>
-                 <script language="javascript">
-                   var CONTEXT_ROOT = "{ S.contextPath }";
-                 </script>
+		  		<script language="javascript">
+		  			var CONTEXT_PATH = "{S.contextPath}";
+  				</script>
                  <script src="/classpath/rte/js/RichTextEditor.js"></script>
                  <script src="/classpath/rte/js/sh_main.min.js"></script>
                  <script src="/classpath/rte/js/sh_xml.min.js"></script>

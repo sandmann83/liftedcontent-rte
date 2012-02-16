@@ -1,6 +1,6 @@
 var EDITOR = 'editor';
 var EDITOR_CONTROLS = 'editor_controls';
-var IMAGE_PATH = CONTEXT_ROOT + "/images/actions/";
+var IMAGE_PATH = CONTEXT_PATH + "/classpath/rte/images/actions/";
 var IMAGE_TYPE = "png";
 
 function editStyle(cmd, value) {
@@ -74,9 +74,9 @@ function createEditorControls() {
 	createEditorControl(editorControls, "indent", "indent");
 	createEditorControl(editorControls, "outdent", "unindent");
 	
-//	createEditorControl(editorControls, "justifyLeft", "text_left");
+//	createEditorControl(editorControls, floatLeft, "text_left");
 //	createEditorControl(editorControls, "justifyCenter", "text_center");
-//	createEditorControl(editorControls, "justifyRight", "text_right");
+//	createEditorControl(editorControls, floatRight, "text_right");
 	
 	createEditorControl(editorControls, "insertParagraph", "key_enter");
 	
@@ -85,4 +85,5 @@ function createEditorControls() {
 
 function enableDesignMode() {
 	createEditorControls();
+	document.execCommand("enableObjectResizing", true, true);
 }
