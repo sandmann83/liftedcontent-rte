@@ -1,4 +1,4 @@
-package de.sbradl.liftedcontent.rte.snippet
+package eu.sbradl.liftedcontent.rte.snippet
 
 import net.liftweb.http.S
 
