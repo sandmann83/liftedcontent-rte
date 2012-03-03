@@ -9,8 +9,6 @@ import net.liftweb.sitemap.Menu
 
 class RichTextEditorModule extends Module {
 
-  def name = "RichTextEditor"
-
   override def menus = List(Menu.i("TEXTILE_PREVIEW") / "textile" >> Hidden)
 
   override def init {
