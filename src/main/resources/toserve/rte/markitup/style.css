@@ -62,3 +62,15 @@
 .markItUp .tablegenerator a {
 	background-image:url(images/table.png);
 }
+
+.markItUp .trademark a {
+	content: "TM";
+}
+
+.markItUp .rtrademark a {
+	content: "R";
+}
+
+.markItUp .copyright a {
+	content: '&copy;';
+}

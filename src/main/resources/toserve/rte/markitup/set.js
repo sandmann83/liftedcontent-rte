@@ -51,6 +51,10 @@ mySettings = {
      			}
      			return html;
      		}
-     	}
+     	},
+     	{separator:'---------------' },
+     	{name:'Trademark', closeWith: '(TM)', className: 'trademark'},
+     	{name:'RegisteredTrademark', closeWith: '(R)', className: 'rtrademark'},
+     	{name:'Copyright', closeWith: '(C)', className: 'copyright'}
 	]
 }

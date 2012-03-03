@@ -14,6 +14,7 @@ class RichTextEditor {
       <script src="/classpath/rte/markitup/set.js"></script>
       <script language="javascript">
 		mySettings.previewParserPath = '{S.contextPath + "/textile"}';
+
         $('textarea').markItUp(mySettings);
       </script>
     </tail>
