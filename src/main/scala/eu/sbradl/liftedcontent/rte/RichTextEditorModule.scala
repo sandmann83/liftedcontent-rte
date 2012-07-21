@@ -8,9 +8,6 @@ import net.liftweb.sitemap.Loc.Hidden
 import net.liftweb.sitemap.Menu
 
 class RichTextEditorModule extends Module {
-
-  override def menus = List(Menu.i("TEXTILE_PREVIEW") / "textile" >> Hidden)
-
   override def init {
     ResourceServer.allow {
       case "rte" :: _ => true
