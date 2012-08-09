@@ -10,7 +10,7 @@ class RichTextEditor {
                  <script src={ mercuryLoaderSrc } type="text/javascript"></script>
                  <script>
                  	jQuery(window).on('mercury:ready', function() {{
-  						Mercury.saveUrl = '{S.contextPath + "/save"}';
+  						Mercury.saveUrl = '{S.contextPath + S.attr("saveUrl").openOr("/save")}';
   					}});
                  </script>
                </head>
