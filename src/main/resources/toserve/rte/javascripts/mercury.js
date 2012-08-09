@@ -388,7 +388,7 @@ window.Mercury = {
     // **Note:** Content is *always* sanitized if looks like it's from MS Word or similar editors regardless of this
     // configuration.
     pasting: {
-      sanitize: 'whitelist',
+      sanitize: false,
       whitelist: {
         h1:     [],
         h2:     [],
