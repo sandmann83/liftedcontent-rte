@@ -24,8 +24,7 @@
 // Some default packages are provided for you.  If you want to define your own, feel free to do so before including this
 // script.  These, or your own packages can be specified to the loader in query params (read below for details).
 if (!window.mercuryPackages) window.mercuryPackages = {
-  development: {javascripts: 'mercury.js', stylesheets: 'mercury.bundle.css'},
-  bundled: {javascripts: 'javascripts/mercury.min.js,javascripts/mercury_dialogs.js', stylesheets: 'stylesheets/mercury.bundle.css'}
+  bundled: {javascripts: 'javascripts/mercury.min.js,javascripts/mercury_dialogs.js,js/mercury_custom.js', stylesheets: 'classpath/rte/stylesheets/mercury.bundle.css'}
 };
 
 
@@ -124,7 +123,13 @@ if (!window.mercuryPackages) window.mercuryPackages = {
         var loaded = 0;
         function loadScript(src) {
           var script = document.createElement('script');
-          script.src = options.src + '/' + src;
+          
+          if(src == "js/mercury_custom.js") {
+          	script.src = options.src + "/" + src;
+          } else {
+          	script.src = options.src + '/classpath/rte/' + src;
+          }
+          
           script.type = 'text/javascript';
           script.charset = 'utf-8';
           head.appendChild(script);

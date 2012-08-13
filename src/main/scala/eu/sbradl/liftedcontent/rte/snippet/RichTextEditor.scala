@@ -15,7 +15,7 @@ class RichTextEditor {
                  </script>
                </head>
 
-  private def mercuryLoaderSrc = "/classpath/rte/javascripts/mercury_loader.js?pack=" + mercuryPackage + "&src=" + S.contextPath + "/classpath/rte"
+  private def mercuryLoaderSrc = "/classpath/rte/javascripts/mercury_loader.js?pack=" + mercuryPackage + "&src=" + S.contextPath
 
   private def mercuryPackage = "bundled"
 
