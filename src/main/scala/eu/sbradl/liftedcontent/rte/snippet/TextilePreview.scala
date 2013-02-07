@@ -2,7 +2,7 @@ package eu.sbradl.liftedcontent.rte.snippet
 
 import net.liftweb.http.S
 import net.liftweb.util.Helpers._
-import net.liftweb.textile.TextileParser
+import net.liftmodules.textile.TextileParser
 
 object TextilePreview {
 
